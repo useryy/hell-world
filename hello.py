@@ -1,6 +1,6 @@
-if response.status_code == 200:
-    # Parse the HTML content of the page
-    soup = BeautifulSoup(response.text, 'html.parser')
+import numpy as np
+import sklearn.svm as svm
 
-    # Extract the main text from the webpage (adjust the tag/class/ID to match the actual structure of the page)
-    main_text = soup.find('div', {'class': 'your-class-name'}).get_text()
+svc = svm.SVC()
+a = np.array([[1,2,3],[4,5,6]])
+print(a)
